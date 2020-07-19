@@ -15,6 +15,7 @@ class BulkFileModification:
             modifier = FileModification(file)
             modifier.head_append(content)
             modifier.write()
+            modifier.close()
 
     def get_file_paths(self):
         return glob.glob(self._path + '**/*.' + self._extension, recursive=True)

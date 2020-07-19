@@ -14,4 +14,6 @@ class FileModification:
 
     def write(self):
         self._file.write(self.content)
+
+    def close(self):
         self._file.close()
