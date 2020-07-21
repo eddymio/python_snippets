@@ -1,6 +1,6 @@
 import argparse
 
-from fileIO.BulkFileModification import BulkFileModification
+from BulkFileModification import BulkFileModification
 
 
 def main(path, extension, content):

@@ -1,6 +1,6 @@
 import glob
 
-from fileIO.FileModification import FileModification
+from FileModification import FileModification
 
 
 class BulkFileModification:
@@ -15,7 +15,6 @@ class BulkFileModification:
             modifier = FileModification(file)
             modifier.head_append(content)
             modifier.write()
-            modifier.close()
-
+            
     def get_file_paths(self):
         return glob.glob(self._path + '**/*.' + self._extension, recursive=True)
